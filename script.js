@@ -41,12 +41,7 @@ const goForward = () => {
         return false;
     }
 
-    showSlides(index);
-    let bullets = document.querySelectorAll('.navigation_bullet');
-    bullets.forEach(bullet => {
-        bullet.classList.remove('active');
-    })
-    bullets[index].classList.add('active');
+    changeSlide(index)
 }
 const goBack = () => {
     index--;
@@ -55,13 +50,7 @@ const goBack = () => {
         index = 0;
         return false;
     }
-
-    showSlides(index);
-    let bullets = document.querySelectorAll('.navigation_bullet');
-    bullets.forEach(bullet => {
-        bullet.classList.remove('active');
-    })
-    bullets[index].classList.add('active');
+   changeSlide(index)   
 }
 
 
