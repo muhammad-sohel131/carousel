@@ -15,6 +15,9 @@
 .slide {
     height: 300px;
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 span.navigation_bullet {width: 17px;height: 17px;border: 2px solid #ddd;display: inline-block;border-radius: 50%;cursor: pointer;}
 
